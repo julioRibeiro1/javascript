@@ -4,30 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de MUltas</title>
+    <title>Detran</title>
 </head>
 <body>
-    <h1>Sistema de multas</h1>
-    velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+    <h1>Sistema de multas </h1>
+    velociade do carro: <input type="number" name="txtvel" id="txtvel">
     <input type="button" value="verificar" onclick="calcular()">
-    <div id="res">
-
-    </div>
-
+    <div id="res"></div>
     <script>
         function calcular(){
-            var txtv = window.document.getElementById('txtvel')
-            var res = window.document.getElementById('res')
+            var txtv = document.getElementById('txtvel')
             var vel = Number(txtv.value)
-            res.innerHTML = `Sua velocidade é de <strong>${vel}km/h</strong> e esta dentro do permitido`
+            var res = document.getElementById('res')
+            res.innerHTML = `Sua velocidade é de ${vel}km/h voçê está dentro do limite permitido.`
             if (vel > 60){
-                res.innerHTML = `Sua velocidade é de <strong>${vel}km/h</strong> e esta acima da velucidade permitida MULTADO`
-            } 
-            res.innerHTML += '<p><strong>Diriga sempre usando o cinto de segurança!</strong></p>'
-           
+                res.innerHTML = `Voçê está a ${vel}km/h acima da velocidade permitida MULTADO.`
+            }
+
         }
     </script>
-
+    <p>Diriga sempre usando <strong>CINTO DE SEGURANÇA!!!!!!!</strong></p>
     
 </body>
 </html>
