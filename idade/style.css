@@ -1,9 +1,9 @@
 body{
-    background: rgb(72, 231, 231);
-    font: normal 15pt arial;
+    background: rgb(52, 187, 187);
+    font: normal 15pt Arial;
 }
 header{
-    color: aliceblue;
+    color: white;
     text-align: center;
 }
 section{
@@ -12,11 +12,13 @@ section{
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
+    box-shadow: 3px 3px 10px black;
 }
-
 footer{
     color: white;
     text-align: center;
     font-style: italic;
+}
+#res{
+    text-align: center;
 }
