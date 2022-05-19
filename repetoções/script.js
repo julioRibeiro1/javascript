@@ -6,12 +6,19 @@ function contar(){
     if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         alert ('[ERRO] Dados faltando')
     } else{
-        res.innerHTML = 'Contando'
+        res.innerHTML ='Contando'
         let i = Number(txti.value)
         let f = Number(txtf.value)
         let p = Number(txtp.value)
-
-        for(let contador = i; contador <= f; contador += p )
-        res.innerHTML += `${contador}\u{1F603}`
+        if (i < f){
+            //Contador crescente
+            for (let c = i; c <=f; c += p)
+            res.innerHTML +=`${c} \u{1F449}`
+        } else {
+            //Contador decrescente
+            for (let c = i; c >=f; c -= p)
+            res.innerHTML +=`${c} \u{1F449}`
+        }
     }
+       
 }
