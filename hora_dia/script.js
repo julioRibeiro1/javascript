@@ -3,7 +3,7 @@ function carregar(){
     var img = document.getElementById('imagem')
     var data = new Date()
     var hora =data.getHours()
-    //var hora = 20
+   // var hora = 19
     msg.innerHTML = `Agora são ${hora} horas`
     if (hora >= 0 && hora < 12){
         img.src = 'manha.jpg'
@@ -15,6 +15,6 @@ function carregar(){
         img.src = 'noite.jpg'
         document.body.style.background = 'black'
     }
-    msg.innerHTML = ''
+    msg.innerHTML = `Agora são ${hora} horas!`
     
 }
