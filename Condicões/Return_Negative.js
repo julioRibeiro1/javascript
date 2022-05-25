@@ -7,6 +7,6 @@ function makeNegative(num){
         return (num * -1)
     }
 }
-console.log(makeNegative (42))
+console.log(makeNegative (98))
     
 
